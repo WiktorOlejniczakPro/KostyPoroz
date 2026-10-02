@@ -45,7 +45,8 @@
             android:layout_height="wrap_content"
             android:hint="Dystans w km"
             android:textSize="40px"
-            android:layout_marginBottom="10dp"/>
+            android:layout_marginBottom="10dp"
+            android:id="@+id/DysKm"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -56,30 +57,33 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Zużycie paliwa na 100km"
-            android:textSize="40px"/>
+            android:textSize="40px"
+            android:id="@+id/ZuzNakm"/>
 
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:layout_marginBottom="10dp">
+            android:layout_marginBottom="10dp"
+            android:id="@+id/Rgroup">
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Benzyna (6,50 zł/l)"
                 android:textSize="35px"
-                android:id="@+id/benzinenBtn"
-                />
+                android:id="@+id/Benzine"/>
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Diesel (6,70 zł/l)"
-                android:textSize="35px"/>
+                android:textSize="35px"
+                android:id="@+id/Diesel"/>
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="LPG (3,10 zł/l)"
-                android:textSize="35px"/>
+                android:textSize="35px"
+                android:id="@+id/Lpg"/>
         </RadioGroup>
 
         <TextView
@@ -91,13 +95,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Liczba pasażerów"
-            android:textSize="40px" />
+            android:textSize="40px"
+            android:id="@+id/Lpasaz"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="OBLICZ KOSZT"
-            android:layout_margin="10dp"/>
+            android:layout_margin="10dp"
+            android:id="@+id/Btn"/>
 
 
         <LinearLayout
@@ -109,10 +115,19 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="ddddddddddddddddd"
+                android:text=""
                 android:textAlignment="center"
-                android:textColor="@color/black"
-                android:background="@color/white"/>
+                android:textColor="#008000"
+                android:background="@color/white"
+                android:id="@+id/CalKoszt"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#008000"
+                android:background="@color/white"
+                android:id="@+id/NaOsob"/>
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
